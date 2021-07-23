@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon server.js",
-    "serve": "node server.js",
-    "start": "node index.js"
+    "serve": "node server.js"
+    
   },
   "dependencies": {
     "dotenv": "^10.0.0",
