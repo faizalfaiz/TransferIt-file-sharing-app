@@ -12,7 +12,7 @@ app.use(express.static('public'));
 require('./config/db');
 connectDB();
 const corsOptions = {
-    origin: ['http://localhost:3000.com', 'http://localhost:3300.com']
+    origin: ['http://localhost:3000', 'http://localhost:3300']
 
 }
 
