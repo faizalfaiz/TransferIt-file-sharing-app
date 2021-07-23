@@ -4,19 +4,19 @@ const connectDB = require('./config/db');
 const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 3000;
-const cors = require('cors');
+// const cors = require('cors');
 // Cors 
 
 
 app.use(express.static('public'));
 require('./config/db');
 connectDB();
-const corsOptions = {
-    origin: 'http://localhost:3000'
+// const corsOptions = {
+//     origin: 'http://localhost:3000'
 
-}
+// }
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 app.use(express.json());
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
