@@ -12,10 +12,10 @@ app.use(express.static('public'));
 require('./config/db');
 connectDB();
 const corsOptions = {
-    origin: process.env.ALLOWED_CLIENTS.split(',')
-    // ['http://localhost:3000', 'http://localhost:5000', 'http://localhost:3300']
-  }
-  
+    origin: ['http://localhost:3000.com', 'http://localhost:3300.com']
+
+}
+
 app.use(cors(corsOptions));
 app.use(express.json());
 app.set('views', path.join(__dirname, '/views'));
