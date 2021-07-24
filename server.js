@@ -12,7 +12,7 @@ app.use(express.static('public'));
 require('./config/db');
 connectDB();
 const corsOptions = {
-    origin: 'http://127.0.0.1:3001'
+    origin: 'https://transferit-fileshare.herokuapp.com'
 
 }
 
